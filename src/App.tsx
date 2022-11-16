@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { ReactDonut } from "./lib";
 function App() {
+  const configure = {
+    svg: {
+      width: "80",
+      height: "80",
+    },
+    circle: {
+      cx: "50",
+      cy: "25",
+      radius: 20,
+      fill: "red",
+      strokeColor1: "gray",
+      strokeColor2: "blue",
+      strokeWidth: "6",
+    },
+    text: {
+      fill: "black",
+      textAnchor: "middle",
+    },
+    percentagevalue: 60,
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactDonut configure={configure} />
     </div>
   );
 }
