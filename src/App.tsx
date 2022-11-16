@@ -10,7 +10,7 @@ function App() {
       cx: "50",
       cy: "25",
       radius: 20,
-      fill: "red",
+      fill: "transparent",
       strokeColor1: "gray",
       strokeColor2: "blue",
       strokeWidth: "6",
