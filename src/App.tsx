@@ -1,4 +1,3 @@
-import "./App.css";
 import { ReactDonut } from "./lib";
 function App() {
   const configure = {
@@ -11,18 +10,18 @@ function App() {
       cy: "25",
       radius: 20,
       fill: "transparent",
-      strokeColor1: "gray",
-      strokeColor2: "blue",
+      strokeColor1: "#aab3b2",
+      strokeColor2: "#34ebe5",
       strokeWidth: "6",
     },
     text: {
-      fill: "black",
+      fill: "gray",
       textAnchor: "middle",
     },
     percentagevalue: 60,
   };
   return (
-    <div className="App">
+    <div>
       <ReactDonut configure={configure} />
     </div>
   );

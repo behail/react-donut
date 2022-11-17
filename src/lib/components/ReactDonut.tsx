@@ -1,4 +1,5 @@
 import React from "react";
+import "./ReactDonut.css";
 type SvgConfiguration = {
   width: string;
   height: string;
