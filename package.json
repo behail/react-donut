@@ -1,6 +1,6 @@
 {
   "name": "react-donut-single-slice",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "",
   "private": false,
   "author": "Behailu M.",
@@ -14,6 +14,7 @@
   "license": "MIT",
   "main": "dist/index.tsx",
   "module": "dist/index.tsx",
+  "types": "./src/lib/main.d.ts",
   "files": [
     "dist",
     "README.md"
@@ -43,7 +44,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files && cp package.json README.md ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
