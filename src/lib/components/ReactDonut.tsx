@@ -1,6 +1,6 @@
 import React from "react";
 import "./ReactDonut.css";
-import { ChartConfiguration } from "../../../index";
+import { ChartConfiguration } from "../type";
 
 const ReactDonut: React.FC<{ configure: ChartConfiguration }> = (props) => {
   const circumfrence: number = 2 * 3.14 * props.configure.circle.radius;
