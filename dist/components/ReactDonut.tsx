@@ -1,7 +1,30 @@
 import React from "react";
 import "./ReactDonut.css";
-import { ChartConfiguration } from "../../../index";
-
+type SvgConfiguration = {
+  width: string;
+  height: string;
+};
+type CircleConfiguration = {
+  cx: string;
+  cy: string;
+  radius: number;
+  fill: string;
+  strokeColor1: string;
+  strokeColor2: string;
+  strokeWidth?: string;
+};
+type TextConfiguration = {
+  fill: string;
+  textAnchor?: string;
+  x?: string;
+  y?: string;
+};
+interface ChartConfiguration {
+  svg: SvgConfiguration;
+  circle: CircleConfiguration;
+  text: TextConfiguration;
+  percentagevalue: number;
+}
 const ReactDonut: React.FC<{ configure: ChartConfiguration }> = (props) => {
   const circumfrence: number = 2 * 3.14 * props.configure.circle.radius;
   const strokeDashoffset =

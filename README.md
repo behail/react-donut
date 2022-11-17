@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# React Donut Single Slice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simpple react single lice donut package.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Using npm:
 
-### `npm start`
+### `npm install react-donut-single-slice`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Configure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `configure = {
 
-### `npm test`
+    svg: {
+      width: string,
+      height: string,
+    },
+    circle: {
+      cx: string,
+      cy: string,
+      radius: number,
+      fill: string,
+      strokeColor1: string,
+      strokeColor2: string,
+      strokeWidth: string,
+    },
+    text: {
+      fill: string,
+      textAnchor: string,
+    },
+    percentagevalue: number,
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+};`
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ` import ReactDOM from "react-dom/client";
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+import App from "./App";
+import { ReactDonut } from "react-donut-single-slice";
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+function App() {
+const configure = {
+svg: {
+width: "80",
+height: "80",
+},
+circle: {
+cx: "50",
+cy: "25",
+radius: 20,
+fill: "transparent",
+strokeColor1: "#aab3b2",
+strokeColor2: "#34ebe5",
+strokeWidth: "6",
+},
+text: {
+fill: "gray",
+textAnchor: "middle",
+},
+percentagevalue: 60,
+};
+return (
 
-### `npm run eject`
+<div>
+<ReactDonut configure={configure} />
+</div>
+);
+}
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+const root = ReactDOM.createRoot(
+document.getElementById("root") as HTMLElement
+);
+root.render(<App />);`
