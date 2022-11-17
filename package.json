@@ -1,13 +1,17 @@
 {
   "name": "react-donut-single-slice",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "",
   "private": false,
   "author": "Behailu M.",
   "keywords": [
     "react",
     "chart donut",
-    "ui"
+    "ui",
+    "typescript",
+    "ts"
   ],
+  "license": "MIT",
   "main": "dist/index.tsx",
   "module": "dist/index.tsx",
   "files": [
@@ -18,7 +22,8 @@
     "type": "git",
     "url": "https://github.com/behail/react-donut"
   },
-  "typings": "",
+  "bugs": "https://github.com/behail/react-donut/issues",
+  "homepage": "https://github.com/behail/react-donut#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",

@@ -10,28 +10,29 @@ Using npm:
 
 ## Configure
 
-### `configure = {
+###
 
-    svg: {
-      width: string,
-      height: string,
-    },
-    circle: {
-      cx: string,
-      cy: string,
-      radius: number,
-      fill: string,
-      strokeColor1: string,
-      strokeColor2: string,
-      strokeWidth: string,
-    },
-    text: {
-      fill: string,
-      textAnchor: string,
-    },
-    percentagevalue: number,
+configure = {
+svg: {
+width: string,
+height: string,
+},
+circle: {
+cx: string,
+cy: string,
+radius: number,
+fill: string,
+strokeColor1: string,
+strokeColor2: string,
+strokeWidth: string,
+},
+text: {
+fill: string,
+textAnchor: string,
+},
+percentagevalue: number,
 
-};`
+};
 
 ## Usage
 
